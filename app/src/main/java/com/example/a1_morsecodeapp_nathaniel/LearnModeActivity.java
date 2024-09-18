@@ -66,6 +66,18 @@ public class LearnModeActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("CurrentLevelIndex", currentLevelIndex);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        currentLevelIndex = savedInstanceState.getInt("CurrentLevelIndex");
+    }
+
     public class LevelAdapter extends ArrayAdapter<LevelItem> {
         public LevelAdapter(Context context, List<LevelItem> levelsList) {
             super(context, 0, levelsList);
@@ -95,7 +107,6 @@ public class LearnModeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         loadLocale();  // Load and apply the saved language
         setContentView(R.layout.activity_learn_mode);
-        setContentView(R.layout.activity_learn_mode);
 
         tvLevelInfo = findViewById(R.id.tv_level_info);
         tvCurrentInput = findViewById(R.id.tv_current_input);
@@ -105,6 +116,16 @@ public class LearnModeActivity extends AppCompatActivity {
         tvIntroMessage = findViewById(R.id.tv_intro_message);
         tvUserInput = findViewById(R.id.tv_user_input);
         sharedPrefs = getSharedPreferences("LevelData", MODE_PRIVATE);
+
+        levels = initializeLevels(); // Make sure levels are initialized first
+
+        if (savedInstanceState != null) {
+            currentLevelIndex = savedInstanceState.getInt("CurrentLevelIndex");
+        } else {
+            currentLevelIndex = 0;
+        }
+
+        startLevel(currentLevelIndex); // Now safely call startLevel method
 
         // Home button code
         ImageButton homeButton = findViewById(R.id.homeButton);
@@ -152,9 +173,6 @@ public class LearnModeActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        levels = initializeLevels();
-        startLevel(0);
 
         // ONLY FOR TESTING:
         /*
