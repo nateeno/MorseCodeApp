@@ -1,7 +1,13 @@
 <resources>
+    <string name="app_name">Your App Name</string>
 
-    <string name="app_name">1_MorseCodeApp_Nathaniel</string>
+    <string name="learn_morse_code">LÆR Morse Code</string>
+    <string name="write_morse_code">SKRIV Morse Code</string>
 
+    <string name="select_level">Select Level</string>
+    <string name="enter_morse_code">Enter Morse Code</string>
+
+    <string name="language">Language</string>
     // For all
     <string name="home_button">Home button</string>
 

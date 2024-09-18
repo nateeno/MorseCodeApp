@@ -38,8 +38,8 @@ public class WriteModeActivity extends AppCompatActivity {
 
         morseCodeView = findViewById(R.id.morseCodeView);
         translatedTextView = findViewById(R.id.translatedTextView);
-        Button morseButton = findViewById(R.id.morseButton);
-        Button clearButton = findViewById(R.id.clearButton);
+        Button morseButton = findViewById(R.id.btn_input);
+        ImageButton clearButton = findViewById(R.id.btn_clear);
 
         // Home button
         ImageButton homeButton = findViewById(R.id.homeButton);

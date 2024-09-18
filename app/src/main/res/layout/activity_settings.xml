@@ -14,11 +14,22 @@
         android:layout_alignParentStart="true"
         android:contentDescription="@string/home_button" />
 
-    <Spinner
-        android:id="@+id/language_spinner"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language" />
+
+        <Spinner
+            android:id="@+id/language_spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_save"

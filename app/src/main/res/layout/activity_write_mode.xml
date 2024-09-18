@@ -1,5 +1,4 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -20,7 +19,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="" />
+        android:text=""
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/translatedTextView"
@@ -28,32 +28,32 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/morseCodeView"
         android:layout_centerHorizontal="true"
-        android:text="" />
+        android:text=""
+        android:textSize="24sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="90dp"
         android:gravity="center"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:padding="16dp">
 
         <Button
-            android:id="@+id/morseButton"
+            android:id="@+id/btn_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/enter_morse"
-            style="@style/StyledButton"
-            android:layout_marginBottom="10dp"/>
-
-        <Button
-            android:id="@+id/clearButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/clear"
+            android:text="@string/enter_morse_code"
             style="@style/StyledButton"/>
 
+        <ImageButton
+            android:id="@+id/btn_clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_trash"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:background="?android:attr/selectableItemBackground"/>
     </LinearLayout>
-
 </RelativeLayout>
