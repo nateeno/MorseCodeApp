@@ -34,6 +34,24 @@ public class LevelManager {
         }
     }
 
+    public class LevelItem {
+        private String levelName;
+        private boolean isLocked;
+
+        public LevelItem(String levelName, boolean isLocked) {
+            this.levelName = levelName;
+            this.isLocked = isLocked;
+        }
+
+        public String getLevelName() {
+            return levelName;
+        }
+
+        public boolean isLocked() {
+            return isLocked;
+        }
+    }
+
     public static String getIntroMessage(int levelIndex, Context context) {
         // AUTOMATISER?
         switch(levelIndex) {

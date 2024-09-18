@@ -1,18 +1,22 @@
 package com.example.a1_morsecodeapp_nathaniel;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +24,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
@@ -42,6 +47,47 @@ public class LearnModeActivity extends AppCompatActivity {
     private Map.Entry<String, Character> currentLetterEntry;
     private TextView tvUserInput;
     SharedPreferences sharedPrefs;
+
+    public class LevelItem {
+        private String levelName;
+        private boolean isLocked;
+
+        public LevelItem(String levelName, boolean isLocked) {
+            this.levelName = levelName;
+            this.isLocked = isLocked;
+        }
+
+        public String getLevelName() {
+            return levelName;
+        }
+
+        public boolean isLocked() {
+            return isLocked;
+        }
+    }
+
+    public class LevelAdapter extends ArrayAdapter<LevelItem> {
+        public LevelAdapter(Context context, List<LevelItem> levelsList) {
+            super(context, 0, levelsList);
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            LevelItem levelItem = getItem(position);
+
+            if (convertView == null) {
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.level_list_item, parent, false);
+            }
+
+            TextView levelName = convertView.findViewById(R.id.level_name);
+            ImageView lockIcon = convertView.findViewById(R.id.lock_icon);
+
+            levelName.setText(levelItem.getLevelName());
+            lockIcon.setVisibility(levelItem.isLocked() ? View.VISIBLE : View.INVISIBLE);
+
+            return convertView;
+        }
+    }
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -107,13 +153,17 @@ public class LearnModeActivity extends AppCompatActivity {
             }
         });
 
-        //levels = initializeLevels();
-        //startLevel(0);
+        levels = initializeLevels();
+        startLevel(0);
 
+        // ONLY FOR TESTING:
+        /*
         levels = initializeLevels();
         SharedPreferences.Editor editor = sharedPrefs.edit();
         editor.putInt("HighestLevelUnlocked", 0);
         editor.apply();
+         */
+        // ------
 
         btnSelectLevel = findViewById(R.id.btn_select_level);
         btnSelectLevel.setOnClickListener(new View.OnClickListener() {
@@ -126,7 +176,6 @@ public class LearnModeActivity extends AppCompatActivity {
 
     private int getHighestLevelUnlocked() {
         return sharedPrefs.getInt("HighestLevelUnlocked", 0);
-        //return Math.max(levels.size(), sharedPrefs.getInt("HighestLevelUnlocked", 0));
     }
 
     private void updateHighestLevelUnlocked() {
@@ -180,7 +229,7 @@ public class LearnModeActivity extends AppCompatActivity {
     private void showLevelSelectionDialog() {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         ListView listView = new ListView(this);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, getLevelsArray());
+        LevelAdapter adapter = new LevelAdapter(this, getLevelsArray());
         listView.setAdapter(adapter);
         dialogBuilder.setView(listView);
         final AlertDialog dialog = dialogBuilder.create();
@@ -188,7 +237,7 @@ public class LearnModeActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position <= getHighestLevelUnlocked()) {
+                if (!getLevelsArray().get(position).isLocked()) {
                     startLevel(position);
                     dialog.dismiss();
                 } else {
@@ -200,17 +249,17 @@ public class LearnModeActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    private String[] getLevelsArray() {
+    private List<LevelItem> getLevelsArray() {
         int highestLevelUnlocked = getHighestLevelUnlocked();
-        String[] levelsArray = new String[levels.size()];
+        List<LevelItem> levelsList = new ArrayList<>();
         for (int i = 0; i < levels.size(); i++) {
             if (i <= highestLevelUnlocked) {
-                levelsArray[i] = "Level " + (i + 1);
+                levelsList.add(new LevelItem("Level " + (i + 1), false));
             } else {
-                levelsArray[i] = "Level " + (i + 1) + " (Locked)";
+                levelsList.add(new LevelItem("Level " + (i + 1), true));
             }
         }
-        return levelsArray;
+        return levelsList;
     }
 
     private String getMorseCodeEntries(Map<String, Character> map) {
