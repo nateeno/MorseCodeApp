@@ -36,12 +36,14 @@
                 style="@style/SmallImageButtonStyle"
                 android:id="@+id/btn_about"
                 android:src="@drawable/icon_info"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"/>
 
             <ImageButton
                 style="@style/SmallImageButtonStyle"
                 android:id="@+id/btn_settings"
-                android:src="@drawable/icon_setting"/>
+                android:src="@drawable/icon_setting"
+                android:scaleType="fitCenter"/>
         </LinearLayout>
 
 

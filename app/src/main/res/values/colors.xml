@@ -1,6 +1,7 @@
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="mainColor">#009688</color> <!-- Teal -->
-    <color name="secondaryColor">#C8E6C9</color> <!-- Light Green -->
+    <color name="black">#1B2727</color>
+    <color name="white">#D5DDDF</color>
+    <color name="mainColor">#6B8E4E</color>
+    <color name="secondaryColor">#B2C5B2</color>
+    <color name="thirdColor">#3C5148</color>
 </resources>
