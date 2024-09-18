@@ -107,8 +107,13 @@ public class LearnModeActivity extends AppCompatActivity {
             }
         });
 
+        //levels = initializeLevels();
+        //startLevel(0);
+
         levels = initializeLevels();
-        startLevel(0);
+        SharedPreferences.Editor editor = sharedPrefs.edit();
+        editor.putInt("HighestLevelUnlocked", 0);
+        editor.apply();
 
         btnSelectLevel = findViewById(R.id.btn_select_level);
         btnSelectLevel.setOnClickListener(new View.OnClickListener() {
@@ -121,6 +126,7 @@ public class LearnModeActivity extends AppCompatActivity {
 
     private int getHighestLevelUnlocked() {
         return sharedPrefs.getInt("HighestLevelUnlocked", 0);
+        //return Math.max(levels.size(), sharedPrefs.getInt("HighestLevelUnlocked", 0));
     }
 
     private void updateHighestLevelUnlocked() {

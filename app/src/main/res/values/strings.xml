@@ -19,6 +19,8 @@
     <string name="intro_message_default">This is the intro for level %1$d.</string>
 
 
+    <string name="about_text">This is the about page of my app.</string>
+
     <string-array name="language_array">
         <item>English</item>
         <item>Norwegian</item>

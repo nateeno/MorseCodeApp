@@ -24,4 +24,5 @@
     <string name="intro_message_level_4">Do you remember T?</string>
     <string name="intro_message_level_5">Two DOTs ("..") are transalted to I. Try writing two dots after eachoter</string>
 
+    <string name="about_text">This is the about page of my app.</string>
 </resources>

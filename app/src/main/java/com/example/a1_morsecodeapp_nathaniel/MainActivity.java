@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
         Button learnModeButton = findViewById(R.id.btn_learn_mode);
         Button writeModeButton = findViewById(R.id.btn_write_mode);
-        Button settingsButton = findViewById(R.id.btn_settings);
+        ImageButton settingsButton = findViewById(R.id.btn_settings);
+        ImageButton aboutButton = findViewById(R.id.btn_about);
 
         learnModeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +59,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        aboutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
                 startActivity(intent);
             }
         });
