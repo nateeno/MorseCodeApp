@@ -1,0 +1,10 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme._1_MorseCodeApp_Nathaniel" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mainColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+    </style>
+
+    <style name="Theme._1_MorseCodeApp_Nathaniel" parent="Base.Theme._1_MorseCodeApp_Nathaniel" />
+</resources>

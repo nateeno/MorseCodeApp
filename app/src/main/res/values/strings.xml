@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">1_MorseCodeApp_Nathaniel</string>
+
+    // For all
+    <string name="home_button">Home button</string>
+
+    // For Write Morse Code Page
+    <string name="enter_morse">Enter Morse Code</string>
+    <string name="clear">Clear</string>
+
+    // LEARN PAGE
+    <string name="level_info">Level %1$d: Learn %2$s</string>
+    <string name="all_levels_completed">All levels completed! Congratulations!</string>
+    <string name="intro_message_level_1">One DOT in morse code is translated to E. Write E (".") in morse code by pressing a short time</string>
+    <string name="intro_message_level_2">One DASH in morse code is translated to T. Write T ("-") in morse code by pressing for a longer time</string>
+    <string name="intro_message_level_3">Do you remember e?</string>
+    <string name="intro_message_level_4">Do you remember T?</string>
+    <string name="intro_message_level_5">Two DOTs ("..") are transalted to I. Try writing two dots after eachoter</string>
+    <string name="intro_message_default">This is the intro for level %1$d.</string>
+
+
+    <string-array name="language_array">
+        <item>English</item>
+        <item>Norwegian</item>
+    </string-array>
+
+</resources>

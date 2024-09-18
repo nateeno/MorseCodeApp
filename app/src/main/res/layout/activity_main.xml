@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/StyledButton"
+            android:id="@+id/btn_learn_mode"
+            android:layout_width="match_parent"
+            android:text="Learn Morse Code"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            style="@style/StyledButton"
+            android:id="@+id/btn_write_mode"
+            android:layout_width="match_parent"
+            android:text="Write Morse Code"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/StyledButton"
+                android:id="@+id/btn_about"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="About"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                style="@style/StyledButton"
+                android:id="@+id/btn_settings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Settings"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
