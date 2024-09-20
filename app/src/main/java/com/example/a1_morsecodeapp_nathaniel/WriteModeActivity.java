@@ -6,7 +6,10 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -61,6 +64,24 @@ public class WriteModeActivity extends AppCompatActivity {
                         return true;
                 }
                 return false;
+            }
+        });
+
+        // Find the ImageView and Switch in the layout
+        final ImageView imgMorse = findViewById(R.id.img_morse);
+        final Switch toggleMorse = findViewById(R.id.toggle_morse);
+
+// Set an OnCheckedChangeListener on the Switch
+        toggleMorse.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is currently on
+                    imgMorse.setVisibility(View.VISIBLE);
+                } else {
+                    // The toggle is currently off
+                    imgMorse.setVisibility(View.GONE);
+                }
             }
         });
 

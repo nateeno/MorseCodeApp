@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="toggle_off" />
+    <drawable name="toggle_on" />
+</resources>

@@ -6,6 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".WriteModeActivity">
 
+    <ImageView
+        android:id="@+id/img_peak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_peak"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/toggle_morse"/>
+
+    <Switch
+        android:id="@+id/toggle_morse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:textOff="Off"
+        android:textOn="On"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <ImageView
+        android:id="@+id/img_morse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_morse"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
     <TextView
         android:id="@+id/morseCodeView"
         android:layout_width="wrap_content"
