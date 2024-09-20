@@ -127,16 +127,6 @@ public class LearnModeActivity extends AppCompatActivity {
 
         startLevel(currentLevelIndex); // Now safely call startLevel method
 
-        // Home button code
-        ImageButton homeButton = findViewById(R.id.homeButton);
-        homeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LearnModeActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
-
         btnInput.setOnTouchListener(new View.OnTouchListener() {
             private long touchDownTime = 0;
 
@@ -150,6 +140,10 @@ public class LearnModeActivity extends AppCompatActivity {
 
                     case MotionEvent.ACTION_UP:
                         long touchDuration = System.currentTimeMillis() - touchDownTime;
+                        if(touchDuration < 250) { // in milliseconds
+                            Toast.makeText(LearnModeActivity.this, "Try holding longer to write", Toast.LENGTH_SHORT).show();
+                            return true;
+                        }
                         String morseSymbol = MorseCode.interpretDuration(touchDuration);
                         currentInput.append(morseSymbol);
                         tvCurrentInput.setText(currentInput.toString());
@@ -173,15 +167,6 @@ public class LearnModeActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        // ONLY FOR TESTING:
-        /*
-        levels = initializeLevels();
-        SharedPreferences.Editor editor = sharedPrefs.edit();
-        editor.putInt("HighestLevelUnlocked", 0);
-        editor.apply();
-         */
-        // ------
 
         btnSelectLevel = findViewById(R.id.btn_select_level);
         btnSelectLevel.setOnClickListener(new View.OnClickListener() {
@@ -217,7 +202,7 @@ public class LearnModeActivity extends AppCompatActivity {
                 levelInfo = "Write: " + getLetters(level.getMorseCodeMap());
             } else {
                 // For non-hard levels, show the complete info including Morse code
-                levelInfo = getString(R.string.level_info, level.getLevelNumber(), getMorseCodeEntries(level.getMorseCodeMap()));
+                levelInfo = "Learn: " + getMorseCodeEntries(level.getMorseCodeMap());
             }
             tvLevelInfo.setText(levelInfo);
 

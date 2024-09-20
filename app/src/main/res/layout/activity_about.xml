@@ -1,22 +1,80 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AboutActivity">
 
-    <ImageButton
-        android:id="@+id/homeButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_menu_revert"
-        android:layout_alignParentStart="true"
-        android:contentDescription="@string/home_button" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/about_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/about_text" />
+        <TextView
+            android:id="@+id/about_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_text_title"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/about_text_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_text_intro"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/alphabet_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/the_alphabet"
+            android:textSize="18sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:id="@+id/alphabet_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_info" />
+
+        <TextView
+            android:id="@+id/app_info_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/h2_app_info"
+            android:textSize="18sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/about_text_learning_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_text_learning_mode"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/about_text_writing_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_text_writing_mode"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/about_text_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_text_end"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</FrameLayout>

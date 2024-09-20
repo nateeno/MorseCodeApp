@@ -41,16 +41,6 @@ public class WriteModeActivity extends AppCompatActivity {
         Button morseButton = findViewById(R.id.btn_input);
         ImageButton clearButton = findViewById(R.id.btn_clear);
 
-        // Home button
-        ImageButton homeButton = findViewById(R.id.homeButton);
-        homeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WriteModeActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
-
         morseButton.setOnTouchListener(new View.OnTouchListener() {
             private long touchDownTime = 0;
 

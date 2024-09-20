@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Morse Mate</string>
+    <string name="app_name" translatable="false">Morse Mate</string>
 
     <string name="language">Language</string>
 
@@ -27,7 +27,14 @@
     <string name="intro_message_default">This is the intro for level %1$d.</string>
 
 
-    <string name="about_text">This is the about page of my app.</string>
+    <string name="about_text_title">Welcome to your Morse Mate!</string>
+    <string name="about_text_intro">This app is designed to help you understand and master Morse Code in a fun and engaging way!\n\nMorse code uses short and long signals, called dots and dashes, to represent letters and numbers. So with just . and - can you write any sentences!</string>
+    <string name="about_text_learning_mode">In <b>Learning Mode</b>, you can learn Morse Code step by step, practicing one letter at a time. You first learn the letter, and then you might also encounter some harder levels where you need to write the letter without seeing the answer in Morse.</string>
+    <string name="about_text_writing_mode">In <b>Writing Mode</b>, you can freely write in Morse Code, perfect for testing your skills and knowledge.</string>
+    <string name="about_text_end">App Created by: Nathaniel Bjerke-Kildal</string>
+    <string name="the_alphabet">The Alphabet</string>
+    <string name="h2_app_info">Info about the app</string>
+
 
     <string-array name="language_array">
         <item>English</item>
