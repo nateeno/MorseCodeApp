@@ -43,13 +43,13 @@
                 android:id="@+id/tv_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="23sp" />
 
             <TextView
                 android:id="@+id/tv_current_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="23sp" />
 
             <TextView
                 android:id="@+id/tv_current_letter"

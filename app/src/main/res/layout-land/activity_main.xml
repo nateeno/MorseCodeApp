@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="end"
+        android:layout_marginRight="20dp"
         android:orientation="horizontal">
 
         <ImageButton
@@ -34,11 +35,6 @@
         android:layout_centerInParent="true"
         android:gravity="center">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="123dp"
-            android:src="@drawable/iconmorsemate_croped" />
-
         <Button
             style="@style/StyledButton"
             android:id="@+id/btn_learn_mode"
@@ -63,9 +59,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"/>
-
-
+            android:layout_marginTop="5dp"
+            />
     </LinearLayout>
 </RelativeLayout>
