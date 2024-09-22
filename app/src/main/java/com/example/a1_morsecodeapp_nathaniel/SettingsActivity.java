@@ -43,35 +43,10 @@ public class SettingsActivity extends AppCompatActivity {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String languageToLoad;
-                switch (languageSpinner.getSelectedItemPosition()) {
-                    case 0:
-                        languageToLoad = "en";
-                        break;
-                    case 1:
-                        languageToLoad = "no";
-                        break;
-                    case 2:
-                        languageToLoad = "de";
-                        break;
-                    default:
-                        languageToLoad = "en";
-                        break;
-                }
-
-                // Save language to SharedPreferences
-                SharedPreferences.Editor editor = getSharedPreferences("Settings", MODE_PRIVATE).edit();
-                editor.putString("My_Lang", languageToLoad);
-                editor.apply();
-
-                // Switch back to MainActivity
-                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
 
             }
         });
-        
+
     }
 
     private void loadLocale() {
