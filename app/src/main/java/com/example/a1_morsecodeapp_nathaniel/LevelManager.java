@@ -53,18 +53,12 @@ public class LevelManager {
     }
 
     public static String getIntroMessage(int levelIndex, Context context) {
-        // AUTOMATISER?
-        switch (levelIndex) {
-            case 0:
-                return context.getString(R.string.intro_message_level_1);
-            case 1:
-                return context.getString(R.string.intro_message_level_2);
-            case 2:
-                return context.getString(R.string.intro_message_level_3);
-            case 3:
-                return context.getString(R.string.intro_message_level_4);
-            default:
-                return context.getString(R.string.intro_message_default, levelIndex + 1);
+        String resourceName = "intro_message_level_" + (levelIndex + 1);
+        int resId = context.getResources().getIdentifier(resourceName, "string", context.getPackageName());
+        if (resId != 0) {
+            return context.getString(resId);
+        } else {
+            return context.getString(R.string.intro_message_default, levelIndex + 1);
         }
     }
 
@@ -478,12 +472,6 @@ public class LevelManager {
             put("----.", '9');
         }};
         levels.add(new Level(68, level68Map, false));
-
-        // Hard Level 69 includes Morse code for 8 only
-        Map<String, Character> level69Map = new HashMap<String, Character>() {{
-            put("---..", '8');
-        }};
-        levels.add(new Level(69, level69Map, true));
 
         return levels;
     }

@@ -16,6 +16,8 @@ public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        loadLocale();
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
@@ -34,6 +36,8 @@ public class SettingsActivity extends AppCompatActivity {
             languageSpinner.setSelection(0);
         } else if (language.equals("no")) {
             languageSpinner.setSelection(1);
+        } else if (language.equals("de")) {
+            languageSpinner.setSelection(2);
         }
 
         saveButton.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +50,9 @@ public class SettingsActivity extends AppCompatActivity {
                         break;
                     case 1:
                         languageToLoad = "no";
+                        break;
+                    case 2:
+                        languageToLoad = "de";
                         break;
                     default:
                         languageToLoad = "en";
@@ -62,8 +69,11 @@ public class SettingsActivity extends AppCompatActivity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
 
-
             }
         });
+        
+    }
+
+    private void loadLocale() {
     }
 }

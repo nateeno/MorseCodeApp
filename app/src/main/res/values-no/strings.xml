@@ -1,42 +1,104 @@
 <resources>
+    <!-- MAIN PAGE -->
+    <string name="app_name" translatable="false">Morse Mate, av Nathaniel</string>
+    <string name="learn_morse_code">Lær Morsekode</string>
+    <string name="write_morse_code">Skriv Morsekode</string>
 
+    <!-- MORSE CODE BUTTONS -->
+    <string name="enter_morse_code">Skriv inn Morsekode</string>
+    <string name="enter_morse">Skriv inn Morsekode</string>
+    <string name="clear">Tøm</string>
 
-    <string name="learn_morse_code">LÆR Morse Code</string>
-    <string name="write_morse_code">SKRIV Morse Code</string>
-
-    <string name="select_level">Select Level</string>
-    <string name="enter_morse_code">Enter Morse Code</string>
-
-    <string name="language">Language</string>
-    // For all
-    <string name="home_button">Home button</string>
-
-    // For Write Morse Code Page
-    <string name="enter_morse">Enter Morse Code</string>
-    <string name="clear">Clear</string>
-
-    <string-array name="language_array">
-        <item>English</item>
-        <item>Norwegian</item>
-    </string-array>
-    <!-- Your existing strings -->
+    <!-- LEARN PAGE -->
+    <string name="select_level">Velg Nivå</string>
 
     <string name="level_info">Nivå %1$d: Lær %2$s</string>
-    <string name="all_levels_completed">Alle nivåer er fullført! Gratulerer!</string>
-    <string name="intro_message_level_1">For å skrive en . i morsekode, trykk kort. En DOT i morse er oversatt til e</string>
-    <string name="intro_message_level_2">Nivå 2: </string>
-    <string name="intro_message_level_3">Nivå 3: </string>
-    <string name="intro_message_default">Dette er introduksjonen for nivå %1$d.</string>
-    <string name="intro_message_level_4">Do you remember T?</string>
-    <string name="intro_message_level_5">Two DOTs ("..") are transalted to I. Try writing two dots after eachoter</string>
+    <string name="all_levels_completed">Alle nivåer fullført! Gratulerer!</string>
+    <string name="intro_message_level_1">En prikk i morsekode oversettes til E. Skriv E (".") i morsekode ved å trykke kort tid</string>
+    <string name="intro_message_level_2">Et strek i morsekode oversettes til T. Skriv T ("-") i morsekode ved å trykke litt lengre</string>
+    <string name="intro_message_level_3">Husker du E?</string>
+    <string name="intro_message_level_4">I i morse er ".." prøv å skrive to prikker etter hverandre!</string>
+    <string name="intro_message_level_5">Husker du T?</string>
+    <string name="intro_message_level_6">A i morsekode er .- prøv å skrive A</string>
+    <string name="intro_message_level_7">Husker du I?</string>
+    <string name="intro_message_level_8">N i morsekode er -. prøv å skrive N</string>
+    <string name="intro_message_level_9">Husker du A?</string>
+    <string name="intro_message_level_10">M i morsekode er -- prøv å skrive M</string>
+    <string name="intro_message_level_11">Husker du N?</string>
+    <string name="intro_message_level_12">S i morsekode er ... prøv å skrive S</string>
+    <string name="intro_message_level_13">Husker du M?</string>
+    <string name="intro_message_level_14">U i morsekode er ..- prøv å skrive U</string>
+    <string name="intro_message_level_15">Husker du S?</string>
+    <string name="intro_message_level_16">R i morsekode er .-. prøv å skrive R</string>
+    <string name="intro_message_level_17">Husker du U?</string>
+    <string name="intro_message_level_18">W i morsekode er .-- prøv å skrive W</string>
+    <string name="intro_message_level_19">Husker du R?</string>
+    <string name="intro_message_level_20">D i morsekode er -.. prøv å skrive D</string>
+    <string name="intro_message_level_21">Husker du W?</string>
+    <string name="intro_message_level_22">K i morsekode er -.- prøv å skrive K</string>
+    <string name="intro_message_level_23">Husker du D?</string>
+    <string name="intro_message_level_24">G i morsekode er --. prøv å skrive G</string>
+    <string name="intro_message_level_25">Husker du K?</string>
+    <string name="intro_message_level_26">O i morsekode er --- prøv å skrive O</string>
+    <string name="intro_message_level_27">Husker du G?</string>
+    <string name="intro_message_level_28">H i morsekode er .... prøv å skrive H</string>
+    <string name="intro_message_level_29">Husker du O?</string>
+    <string name="intro_message_level_30">V i morsekode er ...- prøv å skrive V</string>
+    <string name="intro_message_level_31">Husker du H?</string>
+    <string name="intro_message_level_32">F i morsekode er ..-. prøv å skrive F</string>
+    <string name="intro_message_level_33">Husker du V?</string>
+    <string name="intro_message_level_34">L i morsekode er .-.. prøv å skrive L</string>
+    <string name="intro_message_level_35">Husker du F?</string>
+    <string name="intro_message_level_36">P i morsekode er .--. prøv å skrive P</string>
+    <string name="intro_message_level_37">Husker du L?</string>
+    <string name="intro_message_level_38">J i morsekode er .--- prøv å skrive J</string>
+    <string name="intro_message_level_39">Husker du P?</string>
+    <string name="intro_message_level_40">B i morsekode er -... prøv å skrive B</string>
+    <string name="intro_message_level_41">Husker du J?</string>
+    <string name="intro_message_level_42">X i morsekode er -..- prøv å skrive X</string>
+    <string name="intro_message_level_43">Husker du B?</string>
+    <string name="intro_message_level_44">C i morsekode er -.-. prøv å skrive C</string>
+    <string name="intro_message_level_45">Husker du X?</string>
+    <string name="intro_message_level_46">Y i morsekode er -.-- prøv å skrive Y</string>
+    <string name="intro_message_level_47">Husker du C?</string>
+    <string name="intro_message_level_48">Z i morsekode er --.. prøv å skrive Z</string>
+    <string name="intro_message_level_49">Husker du Y?</string>
+    <string name="intro_message_level_50">Q i morsekode er --.- prøv å skrive Q</string>
+    <string name="intro_message_level_51">Husker du Z?</string>
+    <string name="intro_message_level_52">1 i morsekode er .---- prøv å skrive 1</string>
+    <string name="intro_message_level_53">Husker du Q?</string>
+    <string name="intro_message_level_54">2 i morsekode er ..--- prøv å skrive 2</string>
+    <string name="intro_message_level_55">Husker du 1?</string>
+    <string name="intro_message_level_56">3 i morsekode er ...-- prøv å skrive 3</string>
+    <string name="intro_message_level_57">Husker du 2?</string>
+    <string name="intro_message_level_58">4 i morsekode er ....- prøv å skrive 4</string>
+    <string name="intro_message_level_59">Husker du 3?</string>
+    <string name="intro_message_level_60">5 i morsekode er ..... prøv å skrive 5</string>
+    <string name="intro_message_level_61">Husker du 4?</string>
+    <string name="intro_message_level_62">6 i morsekode er -.... prøv å skrive 6</string>
+    <string name="intro_message_level_63">Husker du 5?</string>
+    <string name="intro_message_level_64">7 i morsekode er --... prøv å skrive 7</string>
+    <string name="intro_message_level_65">Husker du 6?</string>
+    <string name="intro_message_level_66">8 i morsekode er ---.. prøv å skrive 8</string>
+    <string name="intro_message_level_67">Husker du 7?</string>
+    <string name="intro_message_level_68">9 i morsekode er ----. prøv å skrive 9</string>
 
+    <string name="intro_message_default">Nivå %1$d.</string>
 
+    <!-- ABOUT PAGE -->
+    <string name="about_text_title">Velkommen til din Morse Mate!</string>
+    <string name="about_text_intro">Denne appen er designet for å hjelpe deg med å forstå og mestre Morsekode på en morsom og engasjerende måte!\n\nMorsekode bruker korte og lange signaler, kalt prikker og streker, for å representere bokstaver og tall. Så med bare . og - kan du skrive hvilke som helst setninger!</string>
+    <string name="about_text_learning_mode">I <b>Læringsmodus</b>, kan du lære Morsekode steg for steg, og øve på ett brev om gangen. Du lærer først bokstaven, og så kan du også støte på noen vanskeligere nivåer hvor du må skrive brevet uten å se svaret i Morse.</string>
+    <string name="about_text_writing_mode">I <b>Skrivemodus</b>, kan du fritt skrive i Morsekode, perfekt for å teste dine ferdigheter og kunnskaper.</string>
+    <string name="about_text_end">App laget av: Nathaniel Bjerke-Kildal</string>
+    <string name="the_alphabet">Alfabetet</string>
+    <string name="h2_app_info">Info om appen</string>
 
-    <string name="about_text_title">Welcome to your Morse Mate!</string>
-    <string name="about_text_intro">This app is designed to help you understand and master Morse Code in a fun and engaging way!\n\nMorse code uses short and long signals, called dots and dashes, to represent letters and numbers. So with just . and - can you write any sentences!</string>
-    <string name="about_text_learning_mode">In <b>Learning Mode</b>, you can learn Morse Code step by step, practicing one letter at a time. You first learn the letter, and then you might also encounter some harder levels where you need to write the letter without seeing the answer in Morse.</string>
-    <string name="about_text_writing_mode">In <b>Writing Mode</b>, you can freely write in Morse Code, perfect for testing your skills and knowledge.</string>
-    <string name="about_text_end">App Created by: Nathaniel Bjerke-Kildal</string>
-    <string name="the_alphabet">The Alphabet</string>
-    <string name="h2_app_info">Info about the app</string>
+    <!-- SETTINGS PAGE -->
+    <string name="language">Språk</string>
+    <string-array name="language_array">
+        <item>Engelsk</item>
+        <item>Norsk</item>
+        <item>Deutsch</item>
+    </string-array>
 </resources>

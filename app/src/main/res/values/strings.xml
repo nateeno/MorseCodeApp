@@ -1,31 +1,91 @@
 <resources>
+    <!-- MAIN PAGE -->
     <string name="app_name" translatable="false">Morse Mate, by Nathaniel</string>
-
-    <string name="language">Language</string>
-
     <string name="learn_morse_code">Learn Morse Code</string>
     <string name="write_morse_code">Write Morse Code</string>
 
-    <string name="select_level">Select Level</string>
+    <!-- MORSE CODE BUTTONS -->
     <string name="enter_morse_code">Enter Morse Code</string>
-
-    // For all
-    <string name="home_button">Home button</string>
-
-    // For Write Morse Code Page
     <string name="enter_morse">Enter Morse Code</string>
     <string name="clear">Clear</string>
 
-    // LEARN PAGE
+    <!-- LEARN PAGE -->
+    <string name="select_level">Select Level</string>
+
     <string name="level_info">Level %1$d: Learn %2$s</string>
     <string name="all_levels_completed">All levels completed! Congratulations!</string>
     <string name="intro_message_level_1">One DOT in morse code is translated to E. Write E (".") in morse code by pressing a short time</string>
     <string name="intro_message_level_2">One DASH in morse code is translated to T. Write T ("-") in morse code by pressing for a longer time</string>
-    <string name="intro_message_level_3">Do you remember e?</string>
-    <string name="intro_message_level_4">Do you remember T?</string>
-    <string name="intro_message_level_5">Two DOTs ("..") are transalted to I. Try writing two dots after eachoter</string>
-    <string name="intro_message_default">This is the intro for level %1$d.</string>
+    <string name="intro_message_level_3">Do you remember E?</string>
+    <string name="intro_message_level_4">I in morse is ".." try writing two dots after each other!</string>
+    <string name="intro_message_level_5">DO you remember T?</string>
+    <string name="intro_message_level_6">A in morse code is .- try writing A</string>
+    <string name="intro_message_level_7">Do you remember I?</string>
+    <string name="intro_message_level_8">N in morse code is -. try writing N</string>
+    <string name="intro_message_level_9">Do you remember A?</string>
+    <string name="intro_message_level_10">M in morse code is -- try writing M</string>
+    <string name="intro_message_level_11">Do you remember N?</string>
+    <string name="intro_message_level_12">S in morse code is ... try writing S</string>
+    <string name="intro_message_level_13">Do you remember M?</string>
+    <string name="intro_message_level_14">U in morse code is ..- try writing U</string>
+    <string name="intro_message_level_15">Do you remember S?</string>
+    <string name="intro_message_level_16">R in morse code is .-. try writing R</string>
+    <string name="intro_message_level_17">Do you remember U?</string>
+    <string name="intro_message_level_18">W in morse code is .-- try writing W</string>
+    <string name="intro_message_level_19">Do you remember R?</string>
+    <string name="intro_message_level_20">D in morse code is -.. try writing D</string>
+    <string name="intro_message_level_21">Do you remember W?</string>
+    <string name="intro_message_level_22">K in morse code is -.- try writing K</string>
+    <string name="intro_message_level_23">Do you remember D?</string>
+    <string name="intro_message_level_24">G in morse code is --. try writing G</string>
+    <string name="intro_message_level_25">Do you remember K?</string>
+    <string name="intro_message_level_26">O in morse code is --- try writing O</string>
+    <string name="intro_message_level_27">Do you remember G?</string>
+    <string name="intro_message_level_28">H in morse code is .... try writing H</string>
+    <string name="intro_message_level_29">Do you remember O?</string>
+    <string name="intro_message_level_30">V in morse code is ...- try writing V</string>
+    <string name="intro_message_level_31">Do you remember H?</string>
+    <string name="intro_message_level_32">F in morse code is ..-. try writing F</string>
+    <string name="intro_message_level_33">Do you remember V?</string>
+    <string name="intro_message_level_34">L in morse code is .-.. try writing L</string>
+    <string name="intro_message_level_35">Do you remember F?</string>
+    <string name="intro_message_level_36">P in morse code is .--. try writing P</string>
+    <string name="intro_message_level_37">Do you remember L?</string>
+    <string name="intro_message_level_38">J in morse code is .--- try writing J</string>
+    <string name="intro_message_level_39">Do you remember P?</string>
+    <string name="intro_message_level_40">B in morse code is -... try writing B</string>
+    <string name="intro_message_level_41">Do you remember J?</string>
+    <string name="intro_message_level_42">X in morse code is -..- yry writing X</string>
+    <string name="intro_message_level_43">Do you remember B?</string>
+    <string name="intro_message_level_44">C in morse code is -.-. yry writing C</string>
+    <string name="intro_message_level_45">Do you remember X?</string>
+    <string name="intro_message_level_46">Y in morse code is -.-- try writing Y</string>
+    <string name="intro_message_level_47">Do you remember C?</string>
+    <string name="intro_message_level_48">Z in morse code is --.. try writing Z</string>
+    <string name="intro_message_level_49">Do you remember Y?</string>
+    <string name="intro_message_level_50">Q in morse code is --.- try writing Q</string>
+    <string name="intro_message_level_51">Do you remember Z?</string>
+    <string name="intro_message_level_52">1 in morse code is .---- try writing 1</string>
+    <string name="intro_message_level_53">Do you remember Q?</string>
+    <string name="intro_message_level_54">2 in morse code is ..--- try writing 2</string>
+    <string name="intro_message_level_55">Do you remember 1?</string>
+    <string name="intro_message_level_56">3 in morse code is ...-- try writing 3</string>
+    <string name="intro_message_level_57">Do you remember 2?</string>
+    <string name="intro_message_level_58">4 in morse code is ....- try writing 4</string>
+    <string name="intro_message_level_59">Do you remember 3?</string>
+    <string name="intro_message_level_60">5 in morse code is ..... try writing 5</string>
+    <string name="intro_message_level_61">Do you remember 4?</string>
+    <string name="intro_message_level_62">6 in morse code is -.... try writing 6</string>
+    <string name="intro_message_level_63">Do you remember 5?</string>
+    <string name="intro_message_level_64">7 in morse code is --... try writing 7</string>
+    <string name="intro_message_level_65">Do you remember 6?</string>
+    <string name="intro_message_level_66">8 in morse code is ---.. try writing 8</string>
+    <string name="intro_message_level_67">Do you remember 7?</string>
+    <string name="intro_message_level_68">9 in morse code is ----. try writing 9</string>
 
+    <string name="intro_message_default">Level %1$d.</string>
+
+    <!-- ABOUT PAGE -->
     <string name="about_text_title">Welcome to your Morse Mate!</string>
     <string name="about_text_intro">This app is designed to help you understand and master Morse Code in a fun and engaging way!\n\nMorse code uses short and long signals, called dots and dashes, to represent letters and numbers. So with just . and - can you write any sentences!</string>
     <string name="about_text_learning_mode">In <b>Learning Mode</b>, you can learn Morse Code step by step, practicing one letter at a time. You first learn the letter, and then you might also encounter some harder levels where you need to write the letter without seeing the answer in Morse.</string>
@@ -34,9 +94,11 @@
     <string name="the_alphabet">The Alphabet</string>
     <string name="h2_app_info">Info about the app</string>
 
+    <!-- SETTINGS PAGE -->
+    <string name="language">Language</string>
     <string-array name="language_array">
         <item>English</item>
         <item>Norwegian</item>
+        <item>Deutsch</item>
     </string-array>
-
 </resources>

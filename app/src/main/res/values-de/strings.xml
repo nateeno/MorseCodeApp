@@ -1,0 +1,104 @@
+<resources>
+    <!-- MAIN PAGE -->
+    <string name="app_name" translatable="false">Morse Mate, von Nathaniel</string>
+    <string name="learn_morse_code">Lerne Morsecode</string>
+    <string name="write_morse_code">Schreibe Morsecode</string>
+
+    <!-- MORSE CODE BUTTONS -->
+    <string name="enter_morse_code">Gib Morsecode ein</string>
+    <string name="enter_morse">Gib Morsecode ein</string>
+    <string name="clear">Löschen</string>
+
+    <!-- LEARN PAGE -->
+    <string name="select_level">Wähle Level</string>
+
+    <string name="level_info">Level %1$d: Lerne %2$s</string>
+    <string name="all_levels_completed">Alle Level abgeschlossen! Glückwunsch!</string>
+    <string name="intro_message_level_1">Ein Punkt in Morsecode wird zu E. Schreibe E (".") in Morsecode, indem du kurz drückst</string>
+    <string name="intro_message_level_2">Ein Strich in Morsecode wird zu T. Schreibe T ("-") in Morsecode, indem du länger drückst</string>
+    <string name="intro_message_level_3">Erinnerst du dich an E?</string>
+    <string name="intro_message_level_4">I in Morse ist ".." versuche, zwei Punkte nacheinander zu schreiben!</string>
+    <string name="intro_message_level_5">Erinnerst du dich an T?</string>
+    <string name="intro_message_level_6">A in Morsecode ist .- versuche A zu schreiben</string>
+    <string name="intro_message_level_7">Erinnerst du dich an I?</string>
+    <string name="intro_message_level_8">N in Morsecode ist -. versuche N zu schreiben</string>
+    <string name="intro_message_level_9">Erinnerst du dich an A?</string>
+    <string name="intro_message_level_10">M in Morsecode ist -- versuche M zu schreiben</string>
+    <string name="intro_message_level_11">Erinnerst du dich an N?</string>
+    <string name="intro_message_level_12">S in Morsecode ist ... versuche S zu schreiben</string>
+    <string name="intro_message_level_13">Erinnerst du dich an M?</string>
+    <string name="intro_message_level_14">U in Morsecode ist ..- versuche U zu schreiben</string>
+    <string name="intro_message_level_15">Erinnerst du dich an S?</string>
+    <string name="intro_message_level_16">R in Morsecode ist .-. versuche R zu schreiben</string>
+    <string name="intro_message_level_17">Erinnerst du dich an U?</string>
+    <string name="intro_message_level_18">W in Morsecode ist .-- versuche W zu schreiben</string>
+    <string name="intro_message_level_19">Erinnerst du dich an R?</string>
+    <string name="intro_message_level_20">D in Morsecode ist -.. versuche D zu schreiben</string>
+    <string name="intro_message_level_21">Erinnerst du dich an W?</string>
+    <string name="intro_message_level_22">K in Morsecode ist -.- versuche K zu schreiben</string>
+    <string name="intro_message_level_23">Erinnerst du dich an D?</string>
+    <string name="intro_message_level_24">G in Morsecode ist --. versuche G zu schreiben</string>
+    <string name="intro_message_level_25">Erinnerst du dich an K?</string>
+    <string name="intro_message_level_26">O in Morsecode ist --- versuche O zu schreiben</string>
+    <string name="intro_message_level_27">Erinnerst du dich an G?</string>
+    <string name="intro_message_level_28">H in Morsecode ist .... versuche H zu schreiben</string>
+    <string name="intro_message_level_29">Erinnerst du dich an O?</string>
+    <string name="intro_message_level_30">V in Morsecode ist ...- versuche V zu schreiben</string>
+    <string name="intro_message_level_31">Erinnerst du dich an H?</string>
+    <string name="intro_message_level_32">F in Morsecode ist ..-. versuche F zu schreiben</string>
+    <string name="intro_message_level_33">Erinnerst du dich an V?</string>
+    <string name="intro_message_level_34">L in Morsecode ist .-.. versuche L zu schreiben</string>
+    <string name="intro_message_level_35">Erinnerst du dich an F?</string>
+    <string name="intro_message_level_36">P in Morsecode ist .--. versuche P zu schreiben</string>
+    <string name="intro_message_level_37">Erinnerst du dich an L?</string>
+    <string name="intro_message_level_38">J in Morsecode ist .--- versuche J zu schreiben</string>
+    <string name="intro_message_level_39">Erinnerst du dich an P?</string>
+    <string name="intro_message_level_40">B in Morsecode ist -... versuche B zu schreiben</string>
+    <string name="intro_message_level_41">Erinnerst du dich an J?</string>
+    <string name="intro_message_level_42">X in Morsecode ist -..- versuche X zu schreiben</string>
+    <string name="intro_message_level_43">Erinnerst du dich an B?</string>
+    <string name="intro_message_level_44">C in Morsecode ist -.-. versuche C zu schreiben</string>
+    <string name="intro_message_level_45">Erinnerst du dich an X?</string>
+    <string name="intro_message_level_46">Y in Morsecode ist -.-- versuche Y zu schreiben</string>
+    <string name="intro_message_level_47">Erinnerst du dich an C?</string>
+    <string name="intro_message_level_48">Z in Morsecode ist --.. versuche Z zu schreiben</string>
+    <string name="intro_message_level_49">Erinnerst du dich an Y?</string>
+    <string name="intro_message_level_50">Q in Morsecode ist --.- versuche Q zu schreiben</string>
+    <string name="intro_message_level_51">Erinnerst du dich an Z?</string>
+    <string name="intro_message_level_52">1 in Morsecode ist .---- versuche 1 zu schreiben</string>
+    <string name="intro_message_level_53">Erinnerst du dich an Q?</string>
+    <string name="intro_message_level_54">2 in Morsecode ist ..--- versuche 2 zu schreiben</string>
+    <string name="intro_message_level_55">Erinnerst du dich an 1?</string>
+    <string name="intro_message_level_56">3 in Morsecode ist ...-- versuche 3 zu schreiben</string>
+    <string name="intro_message_level_57">Erinnerst du dich an 2?</string>
+    <string name="intro_message_level_58">4 in Morsecode ist ....- versuche 4 zu schreiben</string>
+    <string name="intro_message_level_59">Erinnerst du dich an 3?</string>
+    <string name="intro_message_level_60">5 in Morsecode ist ..... versuche 5 zu schreiben</string>
+    <string name="intro_message_level_61">Erinnerst du dich an 4?</string>
+    <string name="intro_message_level_62">6 in Morsecode ist -.... versuche 6 zu schreiben</string>
+    <string name="intro_message_level_63">Erinnerst du dich an 5?</string>
+    <string name="intro_message_level_64">7 in Morsecode ist --... versuche 7 zu schreiben</string>
+    <string name="intro_message_level_65">Erinnerst du dich an 6?</string>
+    <string name="intro_message_level_66">8 in Morsecode ist ---.. versuche 8 zu schreiben</string>
+    <string name="intro_message_level_67">Erinnerst du dich an 7?</string>
+    <string name="intro_message_level_68">9 in Morsecode ist ----. versuche 9 zu schreiben</string>
+
+    <string name="intro_message_default">Level %1$d.</string>
+
+    <!-- ABOUT PAGE -->
+    <string name="about_text_title">Willkommen zu deinem Morse Mate!</string>
+    <string name="about_text_intro">Diese App ist darauf ausgelegt, dir auf eine lustige und engagierte Art und Weise zu helfen, Morsecode zu verstehen und zu meistern!\n\nMorsecode verwendet kurze und lange Signale, genannt Punkte und Striche, um Buchstaben und Zahlen darzustellen. So kannst du mit nur . und - jegliche Sätze schreiben!</string>
+    <string name="about_text_learning_mode">Im <b>Lernmodus</b>, kannst du Schritt für Schritt Morsecode lernen und jeweils einen Buchstaben üben. Du lernst zuerst den Buchstaben und dann kannst du auch auf einige schwierigere Level stoßen, in denen du den Buchstaben schreiben musst, ohne die Antwort in Morse zu sehen.</string>
+    <string name="about_text_writing_mode">Im <b>Schreibmodus</b>, kannst du frei in Morsecode schreiben, perfekt um deine Fähigkeiten und Kenntnisse zu testen.</string>
+    <string name="about_text_end">App erstellt von: Nathaniel Bjerke-Kildal</string>
+    <string name="the_alphabet">Das Alphabet</string>
+    <string name="h2_app_info">Informationen zur App</string>
+
+    <!-- SETTINGS PAGE -->
+    <string name="language">Sprache</string>
+    <string-array name="language_array">
+        <item>Englisch</item>
+        <item>Norwegisch</item>
+        <item>Deutsch</item>
+    </string-array>
+</resources>
